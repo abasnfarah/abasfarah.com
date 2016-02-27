@@ -1,0 +1,25 @@
+{
+  "name": "abasfarah.com",
+  "version": "1.0.0",
+  "description": "Personal Website abasfarah.com",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abasnfarah/abasfarah.com.git"
+  },
+  "keywords": [
+    "abasnfarah.com"
+  ],
+  "author": "Abas Farah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abasnfarah/abasfarah.com/issues"
+  },
+  "homepage": "https://github.com/abasnfarah/abasfarah.com#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
