@@ -10,5 +10,5 @@ fs.readFile('./HTML/LandingPage.html', function (err, html) {
         response.writeHeader(200, {"Content-Type": "text/html"});  
         response.write(html);  
         response.end();  
-    }).listen(8080);
+    }).listen(80);
 });
