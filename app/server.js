@@ -30,7 +30,7 @@ app.use("*",function(req,res) {
 });
 
 app.listen(8080,function() {
-	console.log("live on port 8080")
+	console.log("live on port 8080 for 127.0.0.1")
 })
 
 
