@@ -29,8 +29,7 @@ app.use("*",function(req,res) {
 	res.sendFile(path + "/404.html");
 });
 
-app.listen(8080,function() {
-	console.log("live on port 8080 for 127.0.0.1")
-})
+app.listen(8080, '127.0.0.1');
+console.log(" app is listening on port 127.0.0.1 to 8080")
 
 
