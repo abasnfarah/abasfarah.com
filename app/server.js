@@ -29,7 +29,7 @@ app.use("*",function(req,res) {
 	res.sendFile(path + "/404.html");
 });
 
-app.listen(8080, '127.0.0.1');
-console.log(" app is listening on port 127.0.0.1 to 8080")
+app.listen(8080, '107.170.55.215');
+console.log(" app is listening on port 107.170.55.215 to 8080");
 
 
