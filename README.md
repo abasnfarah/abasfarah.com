@@ -3,5 +3,5 @@
 Welcome to my repository housing my website files and code.
 It hasn't launched yet so the website isn't live.
 
-Thank you and don't forget to check it out at 
-[a link](abasfarah.com) :)
+Thank you and don't forget to check it outt 
+[here](abasfarah.com) :)
