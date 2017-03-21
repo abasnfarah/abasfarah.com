@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     
     #Added Apps
     'portfolio',
+    'blog',
 ]
 
 MIDDLEWARE_CLASSES = [
