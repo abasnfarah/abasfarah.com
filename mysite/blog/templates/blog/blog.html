@@ -8,11 +8,13 @@
      </div>    
 
     <div class="row">
+        {% for post in object_list %}
+            <div class="col-lg-4">
+                <p><a href="/blog/{{post.id}}" class="btn btn-lg btn-outlin">{{ post.title}}></a> </p>
+            </div>
+        {% endfor %}
         <div class="col-lg-4">
-            <p> </p>
-        </div>
-        <div class="col-lg-4">
-            <p>If you're ever looking for a web developer to work on something for you, or want to just talk about music, movies and or other things, please make sure to contact me.</p>
+            <p>If you like my blog check out some of my projects</p>
         </div>
         <div class="col-lg-8 col-lg-offset-2 text-center">
             <a href="https://github.com/abasnfarah" class="btn btn-lg btn-outline">

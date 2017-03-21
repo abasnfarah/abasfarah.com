@@ -5,5 +5,6 @@ class Post(models.Model):
     body = models.TextField()
     date = models.DateTimeField()
 
+
     def __str__(self):
         return self.title
