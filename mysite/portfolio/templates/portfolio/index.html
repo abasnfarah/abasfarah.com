@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,13 +13,16 @@
     <title>Freelancer - Start Bootstrap Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="{% static 'portfolio/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <!-- <link href="css/freelancer.min.css" rel="stylesheet"> -->
+    <link href="{% static 'portfolio/css/freelancer.min.css' %}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="{% static 'portfolio/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -59,6 +63,9 @@
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
+		    <li>
+			<a href="{% static 'portfolio/resume/resume.pdf' %}">Resume</a>
+		    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -71,7 +78,8 @@
        <div class="container">
             <div class="row">
                 <div class="col-lg-16">
-                    <img class="img-responsive" src="img/devguy.png" alt="">
+                    <!-- <img class="img-responsive" src="img/devguy.png" alt=""> -->
+                    <img class="img-responsive" src="{% static 'portfolio/img/devguy.png' %}" alt="">
                     <div class="intro-text">
                         <span class="name">Abas Farah</span>
                         <hr class="star-light">
@@ -99,7 +107,8 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+                        <!-- <img src="img/portfolio/cabin.png" class="img-responsive" alt=""> -->
+                        <img src="{% static 'portfolio/img/portfolio/cabin.png' %}" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -109,7 +118,8 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                        <!-- <img src="img/portfolio/cake.png" class="img-responsive" alt=""> -->
+                        <img src="{% static 'portfolio/img/portfolio/cake.png' %}" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -119,7 +129,8 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                        <!-- <img src="img/portfolio/circus.png" class="img-responsive" alt=""> -->
+                        <img src="{% static 'portfolio/img/portfolio/circus.png' %}" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -129,7 +140,8 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                        <!-- <img src="img/portfolio/game.png" class="img-responsive" alt=""> -->
+                        <img src="{% static 'portfolio/img/portfolio/game.png' %}" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -139,7 +151,8 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                        <!-- <img src="img/portfolio/safe.png" class="img-responsive" alt=""> -->
+                        <img src="{% static 'portfolio/img/portfolio/safe.png' %}" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -149,7 +162,8 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                        <!-- <img src="img/portfolio/submarine.png" class="img-responsive" alt=""> -->
+                        <img src="{% static 'portfolio/img/portfolio/submarine.png' %}" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -167,14 +181,14 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>I'm a University of Minnesota student majoring in Computer Science. I'm currently working as a backend developer at the University of Minnesota.I've also done a lot of projects on my own which can be seen on my github.</p>
+                    <p>I'm a Univeristy of Minnesota student majoring in Computer Science. I like skating and working on projects on my free time. If you are a emacs user then please know that your doing yourself an injustice by making your work flow inefficient. You should switch over to vim instead. If you need a place to start check out my Dev setup <a style="color:337ab7" href="https://github.com/abasnfarah/Dev_Setup">here</a></p>
                 </div>
                 <div class="col-lg-4">
-                    <p>If you're ever looking for a web develper to work on something for you or want to just talk about music, music, movies and or other things, don't hesitate to <a href="#contact">contact me</a></p>
+                    <p>If you're ever looking for a web developer to work on something for you, or want to just talk about music, movies and or other things, please make sure to contact me.</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="https://github.com/abasnfarah" class="btn btn-lg btn-outline">
-                        <i class="fa fa-github"></i>My Github
+                        <i class="fa fa-github"></i> My Github
                     </a>
                 </div>
             </div>
@@ -243,8 +257,8 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
-                        <p> Unversity of Minnesota 
-                            <br>Minneapolis, MN</p>
+                        <p>University of Minnesota
+                            <br>Minneaplis, MN</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
@@ -268,7 +282,7 @@
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Other Projects</h3>
-                        <p>You can check out the rest of my projects out on my github  <a href="https://github.com/abasnfarah">here</a>.</p>
+                        <p>You can check out the rest of my projects out on my github <a href="https://github.com/abasnfarah">here</a>.</p>
                     </div>
                 </div>
             </div>
@@ -277,7 +291,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; abasfarah.com 2017 
+                        Copyright &copy; abasfarah.com 2017
                     </div>
                 </div>
             </div>
@@ -306,7 +320,8 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                            <!-- <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt=""> -->
+                            <img src="{% static 'portfolio/img/portfolio/cabin.png' %}" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -343,7 +358,8 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                            <!-- <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt=""> --> 
+                            <img src="{% static 'portfolio/img/portfolio/cake.png' %}" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -380,7 +396,8 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <!-- <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt=""> -->
+                            <img src="{% static 'portfolio/img/portfolio/circus.png' %}" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -417,7 +434,8 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <!-- <img src="img/portfolio/game.png" class="img-responsive img-centered" alt=""> -->
+                            <img src="{% static 'portfolio/img/portfolio/game.png' %}" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -454,7 +472,8 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <!-- <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""> -->
+                            <img src="{% static 'portfolio/img/portfolio/safe.png' %}" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -491,7 +510,8 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <!-- <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt=""> -->
+                            <img src="{% static 'portfolio/img/portfolio/submarine.png' %}" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -516,20 +536,25 @@
     </div>
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+    <script src="{% static 'portfolio/vendor/jquery/jquery.min.js' %}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="{% static 'portfolio/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- <script src="js/jqBootstrapValidation.js"></script> -->
+    <script src="{% static 'portfolio/js/jqBootstrapValidation.js' %}"></script>
+    <!-- <script src="js/contact_me.js"></script> -->
+    <script src="{% static 'portfolio/js/contact_me.js' %}"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
+    <!-- <script src="js/freelancer.min.js"></script> -->
+    <script src="{% static 'portfolio/js/freelancer.min.js' %}"></script>
 
 </body>
 
