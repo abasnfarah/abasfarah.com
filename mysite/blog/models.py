@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User', default=author)
+    author = models.ForeignKey('auth.User', default=getAuthor)
     title = models.CharField(max_length = 140)
     body = models.TextField()
     created_date = models.DateTimeField( default=timezone.now)
@@ -12,7 +12,7 @@ class Post(models.Model):
         self.date=timezone.now()
         self.save()
 
-    def author(self):
+    def getAuthor(self):
         return "Abas Farah"
 
     def __str__(self):
