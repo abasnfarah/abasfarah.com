@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.user', on_delete=models.CASCADE, default="Abas Farah")
+    author = models.ForeignKey('author', on_delete=models.CASCADE, default="Abas Farah")
     title = models.CharField(max_length = 140)
     body = models.TextField()
     created_date = models.DateTimeField( default=timezone.now)
